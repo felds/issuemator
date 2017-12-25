@@ -1,0 +1,8 @@
+hwi_oauth:
+    firewall_names: [main]
+
+    resource_owners:
+        bitbucket:
+            type: bitbucket
+            client_id: '%env(BITBUCKET_APP_ID)%'
+            client_secret: '%env(BITBUCKET_APP_SECRET)%'
